@@ -1,0 +1,29 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+
+  * What has been easy?
+
+  * What has been difficult?
+
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+* What new skills have you learned?
+
+	I have learned how to implement the following tags: 
+	  	1. <hr> horizontal rule
+	  	2. <s></s> strikethrough text
+	  	3. <sup></sup> superscript
+
+* What has been easy?
+	I was already familiar with HTML prior to taking this challenge, so everything has been fairly easy so far.  
+
+* What has been difficult?
+
+	I find it overwhelming to keep up with the forums and slack channels.  Since there are so many people engaged in the class it's almost impossible to keep track of the conversations.  I appreciate the additional filtering by adding channels for specific states, the state specific channel is much less chaotic in my opinion
+
+ * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+	I used the W3C Markup Validation Service (https://validator.w3.org) so check my code for any errors, which was helpful in catching the now obsolete <strike> tag for strikethrough text. Instead, the <s> tag was used for the same purpose.  This is a very helpful tool in making sure my code will be rendered correctly. 
+
+
