@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Animal Trading Cards</title>
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-	<div>
+	<div class="full-card">
 		<!-- your favorite animal's name goes here -->
-		<h3>Animal's name</h3>
+		<h3 class="title">Penguin</h3>
 		<!-- your favorite animal's image goes here -->
-		<img src="placeholder.png" alt="name-of-your-animal">
-		<div>
+		<div class="main-img">
+			<img src="penguin.jpeg" alt="penguin" width="300px">
+		</div>
+		<div class="info-box">
 			<!-- your favorite animal's interesting fact goes here -->
-			<p>Write an interesting fact about your favorite animal...</p>
-			<ul>
+			<p class="fun-fact">
+				Each penguin has a unique voice, and that’s why they can recognize each other.
+			</p>
+			<ul class="list">
 				<!-- your favorite animal's list items go here -->
-				<li><span>Label</span>: Item #1</li>
-				<li><span>Label</span>: Item #2</li>
-				<li><span>Label</span>: Item #3</li>
-				<li><span>Label</span>: Item #4</li>
+				<li class="list-item">
+					<span class="item-label">Scientific Name</span>: Spheniscidae
+				</li>
+				<li class="list-item">
+					<span class="item-label">Number of Species</span>: 17
+				</li>
+				<li class="list-item">
+					<span class="item-label">Favorite Food</span>: Fish, Squid and Krill
+				</li>
+				<li class="list-item">
+					<span class="item-label">Distribution</span>: Southern Hemisphere
+				</li>
 			</ul>
 			<!-- your favorite animal's description goes here -->
-			<p>Write a brief description about your favorite animal...</p>
+			<p class="description">Penguins are flightless aquatic birds living mostly in the southern hemisphere of the Earth, except for a single species which lives near the Equator.</p>
 		</div>
 	</div>
 </body>

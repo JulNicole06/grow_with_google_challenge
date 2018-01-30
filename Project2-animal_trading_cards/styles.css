@@ -1,1 +1,47 @@
-/* add your CSS here */
+.full-card{
+	border: 1px grey solid;
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+
+}
+
+.title{
+	margin: 10px;
+}
+
+.main-img{
+	margin: 10px;
+}
+
+.info-box{
+	border: 1px grey solid;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+	flex-direction: column;
+}
+
+.fun-fact{
+	font-style: italic;
+}
+
+.list{
+	list-style-type: none;
+	margin: 0; 
+	padding: 0;
+}
+
+.list-item{
+	margin: 0; 
+	padding: 0;
+}
+
+.item-label{
+	font-weight: bold;
+}
+
+.description{
+
+}
