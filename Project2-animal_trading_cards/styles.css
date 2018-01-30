@@ -1,41 +1,53 @@
-.full-card{
+.full-card, .title, .penguin-image, .info-box{
 	border: 1px grey solid;
-	display: flex;
-	flex-direction: column;
-	width: 320px;
-	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+	border-radius: 5px;
+}
 
+
+.full-card{
+	width: 324px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+.full-card::after {
+	content: "";
+	background: url(https://c.pxhere.com/photos/8c/06/iceberg_ice_floe_antarctica_south_pole_north_pole_ice_cold_southern_ocean-1339758.jpg!d);
+	border-radius: 5px;
+	opacity: 0.4;
+	top: 8px;
+	left: 9px;
+	bottom: 0;
+	right: 0;
+	width: 324px;
+	height: 513px;
+	position: absolute;
+	z-index: -1; 
 }
 
 .title{
-	margin: 10px;
+	margin: 10px 10px 5px 10px;
+	padding: 10px;
 }
 
-.main-img{
-	margin: 10px;
+.penguin-image{
+	width: 300px;
+	margin: 5px 10px 5px 10px;
 }
 
 .info-box{
-	border: 1px grey solid;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-	flex-direction: column;
+	padding: 10px;
+    margin: 5px 10px 10px 10px;
 }
 
 .fun-fact{
 	font-style: italic;
+	margin: 0px 0px 5px 0px;
 }
 
 .list{
 	list-style-type: none;
-	margin: 0; 
 	padding: 0;
-}
-
-.list-item{
-	margin: 0; 
-	padding: 0;
+	margin: 10px 0px 10px 0px;
 }
 
 .item-label{
@@ -43,5 +55,5 @@
 }
 
 .description{
-
+	margin: 5px 0px 0px 0px;
 }
