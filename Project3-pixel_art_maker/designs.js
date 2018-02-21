@@ -1,20 +1,7 @@
 //define default values in case User hits submit without changes
-let gridHeight = $("#inputHeight").val()
-let gridWidth = $("#inputWidth").val()
-let color = $("#colorPicker").val()
-
-//set user defined values for height, width, and color
-$("#inputHeight").change(function() {
-  gridHeight = $(this).val();
-});
-
-$("#inputWidth").change(function() {
-  gridWidth = $(this).val();
-});
-
-$("#colorPicker").change(function() {
-  color = $(this).val();
-});
+const inputHeight = $("#inputHeight")
+const inputWidth = $("#inputWidth")
+const colorPicker = $("#colorPicker")
 
 // When form is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function makeGrid(event){
@@ -25,12 +12,12 @@ $('#sizePicker').submit(function makeGrid(event){
 	let cols = "";
 
 	//set width of row
-	for(let w=0; w<gridWidth; w++){
+	for(let w=0; w<inputWidth.val(); w++){
 		cols += "<td class='blank'></td>";
 	}
 
 	//set height of columns
-	for(let h=0; h<gridHeight; h++){
+	for(let h=0; h<inputHeight.val(); h++){
 		rows += "<tr>" + cols + "</tr>";
 	}
 
@@ -40,7 +27,7 @@ $('#sizePicker').submit(function makeGrid(event){
 	//toggle cell background color when cell is clicked
 	$('td').click(function(event){
 		if($(event.target).hasClass("blank")){
-			$(event.target).css("background-color", color);
+			$(event.target).css("background-color", colorPicker.val());
 			$(event.target).removeClass('blank');
 		}
 		else{
