@@ -1,10 +1,17 @@
 //define default values in case User hits submit without changes
-const inputHeight = $("#inputHeight")
-const inputWidth = $("#inputWidth")
-const colorPicker = $("#colorPicker")
+const inputHeight = $("#inputHeight");
+const inputWidth = $("#inputWidth");
+const colorPicker = $("#colorPicker");
+let i = 0;
 
 // When form is submitted by the user, call makeGrid()
-$('#sizePicker').submit(function makeGrid(event){
+$('#sizePicker').submit(function (event){
+	//prevent form from automatically refreshing page
+	event.preventDefault();
+	makeGrid();
+});
+
+function makeGrid() {
 	//clear grid when user re-submits form with new values
 	$("tbody").remove();
 
@@ -30,13 +37,10 @@ $('#sizePicker').submit(function makeGrid(event){
 			$(event.target).css("background-color", colorPicker.val());
 			$(event.target).removeClass('blank');
 		}
+
 		else{
 			$(event.target).css("background-color", 'white');
             $(event.target).addClass('blank');
 		}
 	})
-
-	//prevent form from automatically refreshing page
-	event.preventDefault();
-
-});
+}
